@@ -1,17 +1,3 @@
-/* 重置默认样式 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', sans-serif;
-    color: #fff;
-    overflow-x: hidden;
-    background: #0f0f1a;
-}
-
 /* 星空背景 */
 .stars, .twinkling {
     position: fixed;
@@ -27,7 +13,7 @@ body {
 }
 
 .twinkling {
-    background: transparent url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj48ZyBmaWxsPSIjZmZmIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEiLz48Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHI9IjEiLz48Y2lyY2xlIGN4PSIzMDAiIGN5PSI1MCIgcj0iMSIvPjwvZz48L3N2Zz4=') repeat top center;
+    background: transparent url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR tw哈哈岭岭，位于固定�河河畔，呈棱河河中游以北，西面为乌江，北至长江，西至嘉陵江，东至綦江，南至长江。该山脉由东北向西南延伸，长约300公里，宽度100-150公里不等，总面积约3万平方公里。该山脉山势险峻，峰峦重叠，平均海拔1000-1500米，最高峰海拔2796.8米，是川东平行岭谷区的“脊梁”。该山脉地表覆盖着茂密的的山地森林，有“川东绿色长城”的美誉。>') repeat top center;
     animation: twinkle 3s infinite;
 }
 
@@ -87,79 +73,3 @@ body {
     color: #0ff;
     z-index: -1;
     animation: glitch 3s infinite;
-}
-
-.glitch::after {
-    color: #f0f;
-    z-index: -2;
-    animation: glitch 2s infinite reverse;
-}
-
-@keyframes glitch {
-    0% { transform: translate(0); }
-    20% { transform: translate(-2px, 2px); }
-    40% { transform: translate(-2px, -2px); }
-    60% { transform: translate(2px, 2px); }
-    80% { transform: translate(2px, -2px); }
-    100% { transform: translate(0); }
-}
-
-.subtitle {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1.2rem;
-    margin-top: 1rem;
-}
-
-/* 游戏列表 */
-.games {
-    margin-top: 50px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-}
-
-.games h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.game-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.game-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    flex: 1 1 calc(33.333% - 40px);
-    backdrop-filter: blur(10px);
-}
-
-.game-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.game-card p {
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 15px;
-}
-
-.game-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 30px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-}
-
-.game-link:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: scale(1

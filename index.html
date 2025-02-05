@@ -3,35 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kirrby's Space</title>
+    <title>Kirrby's Game Space</title>
     <link rel="stylesheet" href="style.css">
-    <!-- 图标库 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- 动态背景 -->
+    <div class="stars"></div>
+    <div class="twinkling"></div>
     <div class="gradient-bg"></div>
-    
-    <!-- 内容容器 -->
+
+    <!-- 主内容 -->
     <div class="container">
-        <div class="content">
+        <!-- 标题部分 -->
+        <section class="hero">
             <h1 class="glitch" data-text="KIRRBY">KIRRBY</h1>
-            <p class="subtitle">Build Things With Passion</p>
-        </div>
+            <p class="subtitle">Welcome to My Game Space</p>
+        </section>
+
+        <!-- 游戏列表 -->
+        <section class="games">
+            <h2>My Games</h2>
+            <div class="game-list">
+                <div class="game-card">
+                    <h3>Godot Test Game</h3>
+                    <p>A simple game built with Godot Engine.</p>
+                    <a href="https://kirrby.github.io/Godot-testgame/" class="game-link" target="_blank">
+                        <i class="fas fa-gamepad"></i>
+                        PLAY NOW
+                    </a>
+                </div>
+                <!-- 未来添加更多游戏 -->
+                <div class="game-card">
+                    <h3>Coming Soon</h3>
+                    <p>Stay tuned for more exciting games!</p>
+                    <a href="#" class="game-link disabled" target="_blank">
+                        <i class="fas fa-gamepad"></i>
+                        COMING SOON
+                    </a>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <!-- 游戏链接按钮 -->
-    <a href="https://kirrby.github.io/Godot-testgame/" class="game-link" target="_blank">
-        <i class="fas fa-gamepad"></i>
-        PLAY MY GODOT GAME
-    </a>
+    <!-- 流星效果 -->
+    <div class="meteor"></div>
 
-    <!-- 浮动粒子 -->
-    <div class="particles">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div>
+    <!-- 脚本 -->
+    <script src="scripts.js"></script>
 </body>
 </html>
